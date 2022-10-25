@@ -1,0 +1,15 @@
+{
+  "name": "@pkg/nuxt-app",
+  "version": "1.0.0",
+  "scripts": {
+    "prepare": "nuxt prepare",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "typecheck": "nuxt typecheck"
+  },
+  "devDependencies": {
+    "nuxt": "^3.0.0-rc.12",
+    "@pkg/nuxt-module": "workspace:*",
+    "@pkg/ui": "workspace:*"
+  }
+}

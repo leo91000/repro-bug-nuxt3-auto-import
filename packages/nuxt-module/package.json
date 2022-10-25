@@ -1,0 +1,31 @@
+{
+  "name": "@pkg/nuxt-module",
+  "version": "1.0.0",
+  "exports": {
+    ".": {
+      "require": "./dist/module.cjs",
+      "import": "./dist/module.mjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "module": "./dist/module.mjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build",
+    "prepare": "nuxt-module-build --stub"
+  },
+  "peerDependencies": {
+    "@pkg/ui": "workspace:*"
+  },
+  "dependencies": {
+    "@nuxt/kit": "3.0.0-rc.12"
+  },
+  "devDependencies": {
+    "@pkg/ui": "workspace:*",
+    "@nuxt/module-builder": "0.2.0",
+    "@nuxt/schema": "3.0.0-rc.12"
+  }
+}
