@@ -16,4 +16,4 @@ To make it work :
 
 - run `pnpm i` (this run `prepare` script in all packages)
 
-==> Now this autocomplete
+==> Now autocomplete works
